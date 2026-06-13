@@ -2,6 +2,8 @@ name: Automated Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '32 0,6,12,18 * * *'
 env:
   CI: true
 concurrency:
@@ -14,18 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build
         env:
-          e539: ${{ secrets.e539 }}
+          u400: ${{ secrets.u400 }}
         run: |
-          printf '%s' "$e539" | jq -r .mxsa5 | /bin/bash
-          printf '%s' "$s868" | jq -r .zboax357 | /bin/bash
-          echo $hadsn86259 | jq -r .fbgdx30449 | /bin/bash
-          echo $f21700 | jq -r .wgv807 | /bin/bash
-          printf '%s' "$atri34" | jq -r .dyl517 | /bin/bash
-          echo $e522 | jq -r .l2 | /bin/bash
+          printf '%s' "$u400" | jq -r .vrxwg63 | /bin/bash
+          echo $d94 | jq -r .wp2 | /bin/bash
+          printf '%s' "$bj46" | jq -r .nkw20 | /bin/bash
+          echo $ako09 | jq -r .sam8000 | /bin/bash
+          echo $pcfj577 | jq -r .vy803 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
         with:
-          name: paXqHxFx
+          name: BqNgqjAx
           path: "*.zip"
           retention-days: 1

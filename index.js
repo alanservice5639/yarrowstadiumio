@@ -1,5 +1,5 @@
 'use strict';
-const MODULE = 'diff-checker-96575b';
+const MODULE = 'diff-checker-a804b6';
 const delay = (ms) => new Promise(r => setTimeout(r, ms));
 const step = (name, ms = 5) => delay(ms).then(() => { console.log(`[${MODULE}] ${name} done`); return name; });
 async function pipeline() {
